@@ -4,26 +4,39 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio &mdash; Thalal Atha Nabil</title>
-        <link rel="stylesheet" href="assets/styles.css">
 
+        <title>Portfolio &mdash; Thalal Atha Nabil</title>
+
+        <!-- Favicon -->
+        <link rel="icon" href="./assets/img/favicon.png" type="image/png">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./assets/styles.css">
+
+        <!-- Morphtext CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Morphext/2.4.4/morphext.css"
             integrity="sha512-rbQVBRhxp7t0s71vF4UBqe5cFYvlG3l/q5KR02v6aGjqh5U0//71F0l5i/+2Q0GB7Z0rgcrzQQOin+WFm1VmJw=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!-- Jquery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
             integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Morphtext JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Morphext/2.4.4/morphext.min.js"
             integrity="sha512-WPYLBBtLFRUKCbj+PI7iHTL9ORQvxc7uhsb7bIQMKoRPYbiybfoIKIxJ7ynVwrGpspeR2K7WFODUST/xDLg1wA=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <script src="assets/script.js"></script>
+        <!-- Custom Script -->
+        <script src="./assets/script.js"></script>
 
     </head>
 
     <body>
         <div class="container">
+
+            <!-- Hero Section Start -->
             <section class="hero">
                 <div class="headline">
                     <p class="text-accent">Halo semuanya 👋, saya</p>
@@ -49,12 +62,13 @@
                                     fill="#8A3FFC" />
                             </svg>
                         </div>
-                        <img src="assets/img/avatar.png" alt="Profile Picture" class="avatar">
+                        <img src="./assets/img/avatar.png" alt="Profile Picture" class="avatar" loading="lazy">
                     </div>
                 </div>
             </section>
+            <!-- Hero Section End -->
 
-
+            <!-- About Me Section Start -->
             <section class="aboutme-section">
                 <h4 class="text-accent">Tentang Saya</h4>
                 <div class="row">
@@ -111,7 +125,9 @@
                     </div>
                 </div>
             </section>
+            <!-- About Me Section End -->
 
+            <!-- Contact Section Start -->
             <section class="contact-section">
                 <h4 class="text-accent">Contact</h4>
                 <h2>Hubungi saya</h2>
@@ -152,19 +168,11 @@
                     </div>
                 </div>
             </section>
+            <!-- Contact Section End -->
 
         </div>
 
-        <script>
-            $(document).ready(function () {
-                /* Rotating Text - Morphtext */
-                $("#js-rotating").Morphext({
-                    animation: "fadeInUp",
-                    separator: ",",
-                    speed: 4000,
-                });
-            });
-        </script>
+
     </body>
 
 </html>
