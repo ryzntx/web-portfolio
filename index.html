@@ -34,10 +34,18 @@
     </head>
 
     <body>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href='#hero'>Home</a></li>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#contact'>Contact Us</a></li>
+            </ul>
+        </nav>
         <div class="container">
 
             <!-- Hero Section Start -->
-            <section class="hero">
+            <section class="hero" id="hero">
                 <div class="headline">
                     <p class="text-accent">Halo semuanya 👋, saya</p>
                     <div class="subheadline">
@@ -69,7 +77,7 @@
             <!-- Hero Section End -->
 
             <!-- About Me Section Start -->
-            <section class="aboutme-section">
+            <section class="aboutme-section" id="about">
                 <h4 class="text-accent">Tentang Saya</h4>
                 <div class="row">
                     <div class="w-50">
@@ -128,7 +136,7 @@
             <!-- About Me Section End -->
 
             <!-- Contact Section Start -->
-            <section class="contact-section">
+            <section class="contact-section" id="contact">
                 <h4 class="text-accent">Contact</h4>
                 <h2>Hubungi saya</h2>
                 <div class="row">
