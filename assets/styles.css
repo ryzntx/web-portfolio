@@ -256,11 +256,24 @@ body {
 /* Navbar */
 
 #menu {
-  background: #0099cc;
-  height: 45px;
+  margin-top: 1rem;
+  margin-inline: 1rem;
+  background: #fcfcfc;
+  height: 50px;
   padding-right: 18px;
   border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
+
+#menu span {
+  margin-inline: 2rem;
+}
+
 #menu ul,
 #menu li {
   margin: 0 auto;
@@ -277,10 +290,10 @@ body {
 }
 #menu a {
   display: block;
-  line-height: 45px;
+  line-height: 50px;
   padding: 0 14px;
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   font-size: 16px;
 }
 #menu a.dropdown-arrow:after {
@@ -295,21 +308,21 @@ body {
   display: none;
   margin: 0;
   padding: 0;
-  height: 45px;
+  height: 50px;
   width: 100%;
   opacity: 0;
   cursor: pointer;
 }
 #menu label {
   display: none;
-  line-height: 45px;
+  line-height: 50px;
   text-align: center;
   position: absolute;
   left: 35px;
 }
 #menu label:before {
   font-size: 1.6em;
-  color: #ffffff;
+  color: #000000;
   content: "\2261";
   margin-left: 20px;
 }
@@ -365,6 +378,9 @@ body {
     float: none;
     width: auto;
   }
+  #menu span {
+    margin-inline-start: 3rem;
+  }
   #menu input,
   #menu label {
     position: absolute;
@@ -376,7 +392,7 @@ body {
     z-index: 4;
   }
   #menu input:checked + label {
-    color: #ffffff;
+    color: #000000;
   }
   #menu input:checked + label:before {
     content: "\00d7";
@@ -384,4 +400,22 @@ body {
   #menu input:checked ~ ul {
     display: block;
   }
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
 }
